@@ -17,6 +17,7 @@ class Note(models.Model):
     important_note = models.TextField(null=True,blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    image = models.ImageField(upload_to="img",null=True,blank=True)
 
     def __str__(self):
         return self.heading
