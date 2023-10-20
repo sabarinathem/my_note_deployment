@@ -1,4 +1,4 @@
-#!/home/sabarinath/Desktop/my_note/my_note_deployment/env/bin/python3.10
+#!/home/sabarinath/Desktop/my_note/my_note_deployment/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
