@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="notes_container">
+  <div class="notes display-flex flex-direction-column align-items-center gap-50px">
+    {% for subject in subjects %}
+    <div class="note display-flex align-items-center justify-content-center">
+      <a href="{% url 'notes' subject.id %}" class="text-decoration-none"><h1 style = "color:white;">{{subject.name}}</h1></a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
+
+
+ 
